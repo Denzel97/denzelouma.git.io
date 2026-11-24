@@ -17,7 +17,7 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,window.innerWidth<700?1.6:2));
   renderer.outputColorSpace=T.SRGBColorSpace;
   renderer.toneMapping=T.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.28;
+  renderer.toneMappingExposure=1.20;
   const scene=new T.Scene();
   const camera=new T.PerspectiveCamera(35,1,.1,80);
   scene.add(new T.HemisphereLight(0xffedda,0x163a2a,1.3));
@@ -63,18 +63,18 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
   function brushedTexture(){
     const c=document.createElement('canvas');c.width=1024;c.height=512;
     const g=c.getContext('2d');
-    g.fillStyle='#dbdbdb';g.fillRect(0,0,c.width,c.height);
+    g.fillStyle='#e2e2e2';g.fillRect(0,0,c.width,c.height);
     let seed=15973;
     function random(){seed=(1664525*seed+1013904223)>>>0;return seed/4294967296}
     for(let i=0;i<1750;i++){
       let y=Math.floor(random()*512);
-      let opacity=.035+random()*.19;
+      let opacity=.018+random()*.055;
       g.fillStyle=random()>.5?'rgba(42,29,19,'+opacity+')':'rgba(255,255,247,'+opacity+')';
       g.fillRect(0,y,1024,random()>.9?2:1);
     }
     for(let i=0;i<120;i++){
       const y=Math.floor(random()*512);
-      g.fillStyle='rgba(67,41,25,.075)';
+      g.fillStyle='rgba(67,41,25,.025)';
       g.fillRect(Math.floor(random()*400),y,300+random()*600,1);
     }
     const t=new T.CanvasTexture(c);
@@ -85,19 +85,19 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
   }
   const grain=brushedTexture();
 
-  const group=new T.Group();scene.add(group);
+  const group=new T.Group();group.scale.y=1.08;scene.add(group);
   const TAU=Math.PI*2;
   function center(t){
     return new T.Vector3(
       2.29*Math.sin(t),
-      .91*Math.sin(2*t),
-      .34*Math.cos(t)+.15*Math.sin(2*t)
+      1.27*Math.sin(2*t),
+      .49*Math.cos(t)+.23*Math.sin(2*t)
     );
   }
   function frame(t){
     const e=.0006,tangent=center(t+e).sub(center(t-e)).normalize();
     const xyNormal=new T.Vector3(-tangent.y,tangent.x,0).normalize();
-    const twist=.72*Math.sin(t)+.31*Math.sin(2*t);
+    const twist=.92*Math.sin(t)+.51*Math.sin(2*t)+.11*Math.cos(t);
     const width=xyNormal.multiplyScalar(Math.cos(twist))
       .add(new T.Vector3(0,0,Math.sin(twist))).normalize();
     const depth=new T.Vector3().crossVectors(tangent,width).normalize();
@@ -141,9 +141,9 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
   geometry.setIndex(indices);
   geometry.computeVertexNormals();
   const metal=new T.MeshPhysicalMaterial({
-    color:0xc98a55,metalness:.97,roughness:.26,
-    roughnessMap:grain,envMapIntensity:2.0,
-    clearcoat:.40,clearcoatRoughness:.17,
+    color:0xb88961,metalness:.98,roughness:.33,
+    roughnessMap:grain,envMapIntensity:1.78,
+    clearcoat:.34,clearcoatRoughness:.21,
     side:T.DoubleSide
   });
   group.add(new T.Mesh(geometry,metal));
@@ -166,7 +166,7 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
   // A slowly moving geometrical armature behind the ribbon.
   const edges=new T.EdgesGeometry(new T.IcosahedronGeometry(3.06,1));
   const wire=new T.LineSegments(edges,new T.LineBasicMaterial({
-    color:0xb4a888,transparent:true,opacity:.23,depthWrite:false
+    color:0xb4a888,transparent:true,opacity:.18,depthWrite:false
   }));
   wire.scale.set(1,.83,.77);
   wire.rotation.set(.19,.13,.1);
@@ -209,7 +209,7 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
     color:0xe0c08c,size:.018,opacity:.48,transparent:true
   })));
 
-  const state={yaw:-.065,pitch:.10,targetYaw:-.065,targetPitch:.10,
+  const state={yaw:-.13,pitch:.14,targetYaw:-.13,targetPitch:.14,
     pointerDown:false,px:0,py:0,visible:true,disposed:false};
   group.rotation.y=state.yaw;group.rotation.x=state.pitch;
   stage.tabIndex=0;
@@ -236,7 +236,7 @@ export async function mountInfinityRibbon({stage,canvas,reducedMotion=false}) {
     else if(e.key==='ArrowRight')state.targetYaw=clamp(state.targetYaw+.085,-.57,.57);
     else if(e.key==='ArrowUp')state.targetPitch=clamp(state.targetPitch-.065,-.31,.42);
     else if(e.key==='ArrowDown')state.targetPitch=clamp(state.targetPitch+.065,-.31,.42);
-    else if(e.key==='Home'){state.targetYaw=-.065;state.targetPitch=.10}
+    else if(e.key==='Home'){state.targetYaw=-.13;state.targetPitch=.14}
     else moved=false;
     if(moved){e.preventDefault();renderFrame()}
   }
