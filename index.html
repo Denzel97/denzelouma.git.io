@@ -1,803 +1,241 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Name of your web site">
-    <meta name="author" content="Marketify">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Denzel | Home</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-    <link rel="stylesheet" type="text/css" href="css/colors.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/darkMode.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-    <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Start of Async Callbell Code -->
-    <script>
-        window.callbellSettings = {
-            token: "FLoiKfFgnnNwfEP4aiAGiR2f"
-        };
-    </script>
-    <script>
-        (function() {
-            var w = window;
-            var ic = w.callbell;
-            if (typeof ic === "function") {
-                ic('reattach_activator');
-                ic('update', callbellSettings);
-            } else {
-                var d = document;
-                var i = function() {
-                    i.c(arguments)
-                };
-                i.q = [];
-                i.c = function(args) {
-                    i.q.push(args)
-                };
-                w.Callbell = i;
-                var l = function() {
-                    var s = d.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js';
-                    var x = d.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                };
-                if (w.attachEvent) {
-                    w.attachEvent('onload', l);
-                } else {
-                    w.addEventListener('load', l, false);
-                }
-            }
-        })()
-    </script>
-    <!-- End of Async Callbell Code -->
-
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0c100e">
+<title>Denzel Ouma Opondo — Engineer. Founder. Builder.</title>
+<meta name="description" content="Denzel Ouma Opondo is a Nairobi-based full-stack software engineer, founder of FikraWorks Technologies and builder of purposeful digital products.">
+<meta name="author" content="Denzel Ouma Opondo">
+<meta property="og:type" content="website"><meta property="og:title" content="Denzel Ouma Opondo | Engineer. Founder. Builder."><meta property="og:description" content="Building the systems behind better experiences. Selected work, ideas and the journey so far.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/5a448546-8866-41ff-8208-a69c26484272.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c100e'/%3E%3Ctext x='10' y='44' font-size='32' font-family='sans-serif' fill='%23d9b68e' font-weight='bold'%3ED.%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+<script src="/script.js" defer></script>
+<script>window.FikraConnectConfig={person:"Denzel Ouma Opondo",email:"opondodenzel@gmail.com",whatsapp:"254100994560",linkedin:"https://www.linkedin.com/in/denzel-ouma-261775178",position:"right",subject:"Portfolio project enquiry"};</script>
+<script src="/fikra-connect.js" defer></script>
+<link rel="stylesheet" href="/motion.css">
+<link rel="stylesheet" href="/infinity-ribbon.css">
+<link rel="stylesheet" href="/fikra-connect-showcase.css">
+<script src="/motion.js" defer></script>
+<script src="/fikra-connect-showcase.js" defer></script>
 </head>
-
 <body>
-
-    <div class="arlo_tm_preloader">
-        <div class="spinner_wrap">
-            <div class="spinner"></div>
-        </div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div><div class="cursor" id="cursor" aria-hidden="true"></div>
+<header class="site-header" id="siteHeader">
+  <a class="identity magnetic" href="#home" aria-label="Denzel Ouma Opondo, home"><span class="identity-mark">d<span>.</span></span><span class="identity-label">DENZEL<br>OPONDO</span></a>
+  <nav class="desktop-nav" aria-label="Primary navigation"><a class="nav-link" href="#work">Selected work</a><a class="nav-link" href="#about">My story</a><a class="nav-link" href="#expertise">Expertise</a><a class="nav-link" href="#contact">Contact</a></nav>
+  <div class="header-actions"><span class="available"><i></i> OPEN TO CONVERSATIONS</span><a class="outline-btn magnetic header-cta" href="mailto:opondodenzel@gmail.com?subject=Let%27s%20work%20together">Let's talk <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button></div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" inert><a href="#home">Home <span>01</span></a><a href="#work">Selected work <span>02</span></a><a href="#about">My story <span>03</span></a><a href="#expertise">Expertise <span>04</span></a><a href="#contact">Contact <span>05</span></a></nav>
+<main id="main">
+  <section class="hero" id="home" aria-labelledby="heroTitle">
+    <div class="hero-video-media" aria-hidden="true"><video id="heroBackgroundVideo" class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/e75bd5de-affd-4fba-ab54-81bb1d8f73a3.png" disablepictureinpicture><source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/4ebe9537-6e3b-4a1c-8373-c80c055de247.mp4" type="video/mp4"></video><div class="hero-video-scrim"></div></div>
+    <button class="hero-video-toggle" type="button" id="heroVideoToggle" aria-label="Pause background video"><span id="heroVideoToggleIcon" aria-hidden="true">Ⅱ</span><span id="heroVideoToggleText">PAUSE MOTION</span></button>
+    <div class="hero-grid-pattern" aria-hidden="true"></div><span class="hero-side-note">INDEPENDENT MIND. COLLECTIVE AMBITION.</span>
+    <div class="hero-content shell">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> THE PERSON BEHIND THE PROJECTS <span class="edition">PORTFOLIO / 2026</span></div>
+        <h1 id="heroTitle" class="hero-title"><span>Making</span><span>ideas <em>real.</em></span></h1>
+        <p class="hero-description">I'm <strong>Denzel Ouma Opondo.</strong> A full-stack engineer, founder, and relentless builder turning complex problems into thoughtful digital experiences.</p>
+        <div class="hero-links"><a class="solid-btn magnetic" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="#about">The story behind it <span>↗</span></a></div>
+        <div class="hero-bottom-meta"><span>BASED IN<br><strong>NAIROBI, KENYA</strong></span><span>MY APPROACH<br><strong>THINK → BUILD → EVOLVE</strong></span></div>
+      </div>
+      <div class="hero-art" aria-label="Portrait of Denzel Ouma Opondo">
+        <div class="art-halo" aria-hidden="true"></div>
+        <div class="portrait-frame tilt" data-tilt="4"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/5a448546-8866-41ff-8208-a69c26484272.jpg" alt="Denzel wearing a camel jacket and sunglasses outdoors" fetchpriority="high"><div class="portrait-vignette"></div></div>
+        <div class="hero-glyph" aria-hidden="true">DO<span>®</span></div><div class="photo-caption"><span class="caption-cross">✳</span><span>HUMAN FIRST.<br>TECHNOLOGY WITH PURPOSE.</span></div>
+        <div class="hero-circle-text" aria-hidden="true"><span>DESIGN • DEVELOP • DEPLOY •</span></div>
+      </div>
     </div>
+    <div class="hero-footer shell"><span>SCROLL TO EXPLORE <span class="scroll-line"></span></span><span>001 — AN INTRODUCTION</span><span>ENGINEER / FOUNDER / PROBLEM SOLVER</span></div>
+  </section>
 
+  <div class="ticker" aria-label="Build with purpose"><div class="ticker-track" aria-hidden="true"><span>THINK DEEPER <i>✳</i> BUILD BETTER <i>✳</i> CREATE WHAT MATTERS <i>✳</i> THINK DEEPER <i>✳</i> BUILD BETTER <i>✳</i> CREATE WHAT MATTERS <i>✳</i></span><span>THINK DEEPER <i>✳</i> BUILD BETTER <i>✳</i> CREATE WHAT MATTERS <i>✳</i> THINK DEEPER <i>✳</i> BUILD BETTER <i>✳</i> CREATE WHAT MATTERS <i>✳</i></span></div></div>
 
-    <div class="arlo_tm_all_wrap" data-magic-cursor="" data-color="green">
-
-
-
-
-        <div class="arlo_tm_settings">
-            <div class="icon">
-                <img class="svg" src="img/svg/setting.svg" alt="" />
-                <a class="link" href="#"></a>
-            </div>
-            <div class="wrapper">
-                <ul class="direction">
-                    <li>
-                        <a class="active light" href="#"><img class="svg" src="img/svg/weather.svg" alt=" /"></a>
-                    </li>
-                    <li>
-                        <a class="dark" href="#"><img class="svg" src="img/svg/islam.svg" alt=" /"></a>
-                    </li>
-                </ul>
-                <ul class="colors">
-                    <li>
-                        <a class="blue" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="green" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="brown" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="pink" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="orange" href="#"></a>
-                    </li>
-                    <li class="bl">
-                        <a class="black" href="#"></a>
-                    </li>
-                    <li class="wh">
-                        <a class="white" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="purple" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="sky" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="cadetBlue" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="crimson" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="olive" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="red" href="#"></a>
-                    </li>
-                </ul>
-                <span class="title">Magic Cursor</span>
-                <ul class="cursor">
-                    <li>
-                        <a class="showme show" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="hide" href="#"><img class="svg" src="img/svg/arrow.svg" alt="" /></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="wrapper_inner">
-
-            <div class="arlo_tm_mobile_menu">
-                <div class="mobile_menu_inner">
-                    <div class="container">
-                        <div class="mobile_in">
-                            <div class="logo">
-                                <a href="#"><img src="img/logo/mobile.png" alt="" /></a>
-                            </div>
-                            <div class="my_trigger">
-                                <div class="hamburger hamburger--collapse-r">
-                                    <div class="hamburger-box">
-                                        <div class="hamburger-inner"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <div class="container">
-                        <div class="dropdown_inner">
-                            <ul class="anchor_nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#news">News</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="arlo_tm_leftpart">
-                <div class="inner">
-                    <div class="logo">
-                        <a href="#"><img src="img/logo/light.png" alt="" /></a>
-                    </div>
-                    <div class="menu scrollable">
-                        <ul class="anchor_nav">
-                            <li class="current"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="bottom">
-                        <div class="social">
-                            <ul>
-                                <li><a href="#"><i class="xcon-facebook"></i></a></li>
-                                <li><a href="#"><i class="xcon-twitter"></i></a></li>
-                                <li><a href="#"><i class="xcon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="xcon-instagram"></i></a></li>
-                                <li><a href="#"><i class="xcon-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="arlo_tm_rightpart">
-                <div class="rightpart_inner">
-
-                    <div class="arlo_tm_section" id="home">
-                        <div class="arlo_tm_hero_header">
-                            <div class="hero_image jarallax" data-img-url="img/slider/6.jpg" data-speed="0"></div>
-                            <div class="overlay"></div>
-                            <div class="hero_content">
-                                <div class="image_wrap">
-                                    <img src="img/about/500x50.jpg" alt="" />
-                                    <div class="main" data-img-url="img/about/denzel2.jpg"></div>
-                                </div>
-                                <div class="name_holder">
-                                    <h3>Denzel <span>Opondo</span></h3>
-                                </div>
-                                <div class="text_typing">
-                                    <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
-                                </div>
-                            </div>
-                            <div class="arlo_tm_arrow_wrap bounce anchor">
-                                <a href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="arlo_tm_section" id="about">
-                        <div class="arlo_tm_about_wrap_all">
-                            <div class="arlo_tm_about">
-                                <div class="container">
-                                    <div class="arlo_title_holder">
-                                        <span>Biography</span>
-                                        <h3>About Me</h3>
-                                    </div>
-                                    <div class="about_inner">
-                                        <div class="leftbox">
-                                            <div class="about_image_wrap parallax" data-relative-input="true">
-                                                <div class="image layer" data-depth="0.1">
-                                                    <img src="img/about/550x650.jpg" alt="" />
-                                                    <div class="inner" data-img-url="img/about/denzel2.jpg"></div>
-                                                </div>
-                                                <div class="border layer" data-depth="0.2">
-                                                    <img src="img/about/550x650.jpg" alt="" />
-                                                    <div class="inner"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="rightbox">
-                                            <div class="about_title">
-                                                <h3>I'm Denzel Opondo and I'm a <span class="arlo_tm_animation_text_word"></span></h3>
-                                            </div>
-                                            <div class="text">
-                                                <p>Hi! My name is <span>Denzel Opondo</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional Web developer, I have acquired the skills and
-                                                    knowledge necessary to make your project a success.</p>
-                                            </div>
-                                            <div class="about_short_contact_wrap">
-                                                <ul>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/gift.svg" alt="" />
-                                                        <span><label>Birthday:</label> 08.10.1997</span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/calendar-4.svg" alt="" />
-                                                        <span><label>Age:</label> 23</span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/location-1.svg" alt="" />
-                                                        <span><label>Location:</label> <a class="href_location" href="#"> Nairobi, Kenya</a></span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/game-controller-2.svg" alt="" />
-                                                        <span><label>Interests:</label> Playstation, Reading, Swimming</span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/study-5.svg" alt="" />
-                                                        <span><label>Study:</label> <a class="href_location" href="#"> Edulink International College</a></span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/degree-1.svg" alt="" />
-                                                        <span><label>Degree:</label> Diploma</span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/message-3.svg" alt="" />
-                                                        <span><label>Mail:</label> <a href="mailto:denzelwash97@gmail.com">denzelwash97&#64;gmail.com</a></span>
-                                                    </li>
-                                                    <li>
-                                                        <img class="svg" src="img/svg/call-2.svg" alt="" />
-                                                        <span><label>Phone:</label> <a href="tel:+254 740 765 460">+254 740 765 460 / +254 112 853 450</a></span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="buttons">
-                                                <ul>
-                                                    <li><a href="https://drive.google.com/file/d/1h1WlCnUV-BD1MFmSQzoXLKdyWmKn2AQW/view?usp=sharing" target="_blank"><span>Download CV</span></a></li>
-                                                    <li><a href="mailto:denzelwash97@gmail.com"><span>Hire Me</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 
-<div class="arlo_tm_section" id="services">
-<div class="arlo_tm_services">
-<div class="container">
-<div class="arlo_title_holder">
-<span>Services</span>
-<h3>What I Do</h3>
-</div>
-<div class="service_inner">
-<ul>
-<li class="wow fadeInUp" data-wow-duration="0.8s">
-<div class="inner">
-<img class="svg" src="img/svg/creativity.svg" alt="" />
-<h3>Creative Design</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-<div class="inner">
-<img class="svg" src="img/svg/code.svg" alt="" />
-<h3>Web Development</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
-<div class="inner">
-<img class="svg" src="img/svg/telegram.svg" alt="" />
-<h3>Brand Identity</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s">
-<div class="inner">
-<img class="svg" src="img/svg/photoshop.svg" alt="" />
- <h3>Adobe Photoshop</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-<div class="inner">
-<img class="svg" src="img/svg/ai.svg" alt="" />
-<h3>Adobe Illustrator</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
-<div class="inner">
-<img class="svg" src="img/svg/share.svg" alt="" />
-<h3>Social Media</h3>
-<p>Web design is a similar process of creation, with the intention of presenting...</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-
-<div class="arlo_tm_progress_wrap">
-<div class="container">
-<div class="progress_wrap_inner">
-<div class="left">
-<div class="main_title">
-<h3>In a <span>short time</span>, I have been able to achieve excellence in all areas of app and web development.</h3>
-</div>
-<div class="text">
-<p>I provide cost-effective and high quality products to meet our Clients’ needs of timely delivery World Wide. I want to be local in a global world to be where our Customers need our services customers need our services.</p>
-</div>
-</div>
-<div class="right">
-<div class="arlo_progress">
-<div class="progress_inner" data-value="95" data-color="">
-<span><span class="label">Web Development</span><span class="number">95%</span></span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-</div>
-<div class="progress_inner" data-value="80" data-color="">
-<span><span class="label">Brand Identity</span><span class="number">80%</span></span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-</div>
-<div class="progress_inner" data-value="90" data-color="">
-<span><span class="label">Javascript</span><span class="number">90%</span></span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-</div>
-<div class="progress_inner" data-value="85" data-color="">
-<span><span class="label">WordPress</span><span class="number">85%</span></span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-<div class="arlo_tm_portfolio" id="portfolio">
-<div class="container">
-<div class="arlo_title_holder">
-<span>Portfolio</span>
-<h3>Featured Works</h3>
-</div>
-<div class="portfolio_inner">
-<div class="arlo_tm_portfolio_titles"></div>
-<div class="portfolio_filter">
-<ul>
-<li><a href="#" class="current" data-filter="*">All</a></li>
-<li><a href="#" data-filter=".vimeo">Vimeo Video</a></li>
-<li><a href="#" data-filter=".youtube">YouTube Video</a></li>
-<li><a href="#" data-filter=".popup">Popup Image</a></li>
-</ul>
-</div>
-<div class="portfolio_list">
-<ul class="gallery_zoom">
-<li class="vimeo">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Solonick Dance" data-category="Vimeo">
-<a href="portfolio-single.html">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="video-wrapper">
-<video loop muted autoplay>
-<source src="https://player.vimeo.com/external/390322013.sd.mp4?s=15c5b725ee36b37364ff25c1a709ad4855bc3213&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-</video>
-</div>
-</a>
-</div>
-</div>
-</li>
-<li class="youtube">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Blue Lemon" data-category="YouTube">
-<a class="popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="main_image" data-img-url="img/portfolio/8.jpg"></div>
-</a>
-</div>
-</div>
-</li>
-<li class="popup">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Red Nike" data-category="Image">
-<a class="zoom" href="img/portfolio/7.jpg">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="main_image" data-img-url="img/portfolio/7.jpg"></div>
-</a>
-</div>
-</div>
-</li>
-<li class="popup">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Water Drops" data-category="Image">
-<a class="zoom" href="img/portfolio/5.jpg">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="main_image" data-img-url="img/portfolio/5.jpg"></div>
-</a>
-</div>
-</div>
-</li>
-<li class="youtube">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Sweet Cherry" data-category="YouTube">
-<a class="popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="main_image" data-img-url="img/portfolio/6.jpg"></div>
-</a>
-</div>
-</div>
-</li>
-<li class="vimeo">
-<div class="inner">
-<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Bona Morata" data-category="Vimeo">
-<a href="portfolio-single.html">
-<img src="img/portfolio/600x600.jpg" alt="" />
-<div class="video-wrapper">
-<video loop muted autoplay>
-<source src="https://player.vimeo.com/external/390319820.sd.mp4?s=db3498515d124d308840893802ee139df82aba3a&amp;profile_id=165&amp;oauth2_token_id=57447761" type="video/mp4">
-</video>
-</div>
-</a>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div> -->
-
-
-                    <div class="arlo_tm_section">
-                        <div class="arlo_tm_testimonial">
-                            <div class="testimonial_inner">
-                                <div class="testimonial_bg">
-                                    <div class="image jarallax" data-speed-="0" data-img-url="img/slider/3.jpg"></div>
-                                    <div class="overlay"></div>
-                                </div>
-                                <div class="testimonial_content">
-                                    <div class="container">
-                                        <div class="content_inner">
-                                            <div class="icon">
-                                                <img class="svg" src="img/svg/quotes.svg" alt="" />
-                                            </div>
-                                            <ul class="owl-carousel">
-                                                <li class="item">
-                                                    <div class="texts">
-                                                        <p>Code is like humor. When you have to explain it, it’s bad.</p>
-                                                        <div class="author">
-                                                            <div class="image">
-                                                                <div class="main" data-img-url="img/about/2.jpg"></div>
-                                                            </div>
-                                                            <div class="short">
-                                                                <h3 class="author"><span> Cory House</span></h3>
-                                                                <h3 class="job"><span>principal consultant at reactjsconsulting.com</span></h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="texts">
-                                                        <p>Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away</p>
-                                                        <div class="author">
-                                                            <div class="image">
-                                                                <div class="main" data-img-url="img/about/1.jpg"></div>
-                                                            </div>
-                                                            <div class="short">
-                                                                <h3 class="author"><span>Antoine de Saint-Exupery</span></h3>
-                                                                <h3 class="job"><span>French Authorr</span></h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="texts">
-                                                        <p>Before software can be reusable it first has to be usable.</p>
-                                                        <div class="author">
-                                                            <div class="image">
-                                                                <div class="main" data-img-url="img/about/3.jpg"></div>
-                                                            </div>
-                                                            <div class="short">
-                                                                <h3 class="author"><span>Ralph Johnson</span></h3>
-                                                                <h3 class="job"><span>American singer</span></h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- <div class="arlo_tm_section">
-<div class="arlo_tm_timeline">
-<div class="container">
-<div class="arlo_title_holder">
-<span>Timeline</span>
-<h3>Working Period</h3>
-</div>
-<div class="timeline_inner">
-<ul>
-<li>
-<div class="list_inner">
-<div class="time">
-<span>2017 - Current</span>
-</div>
-<img class="dark" src="img/timeline/envato.png" alt="" />
-<img class="light" src="img/timeline/envato-light.png" alt="" />
-<span class="job">Full Stack Developer</span>
-<p class="text">With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
-</div>
-</li>
-<li>
-<div class="list_inner">
-<div class="time">
-<span>2014 - 2017</span>
-</div>
-<img class="dark" src="img/timeline/envato.png" alt="" />
-<img class="light" src="img/timeline/envato-light.png" alt="" />
-<span class="job">Web Developer</span>
-<p class="text">With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
-</div>
-</li>
-<li>
-<div class="list_inner">
-<div class="time">
-<span>2012 - 2014</span>
-</div>
-<img class="dark" src="img/timeline/envato.png" alt="" />
-<img class="light" src="img/timeline/envato-light.png" alt="" />
-<span class="job">Systems Analyst</span>
-<p class="text">With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
-</div>
-</li>
-<li>
-<div class="list_inner">
-<div class="time">
-<span>2010 - 2012</span>
-</div>
-<img class="dark" src="img/timeline/envato.png" alt="" />
-<img class="light" src="img/timeline/envato-light.png" alt="" />
-<span class="job">Graphic Designer</span>
-<p class="text">With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div> -->
-
-
-                    <!-- <div class="arlo_tm_section" id="news">
-<div class="arlo_tm_home_news">
-<div class="container">
-<div class="arlo_title_holder">
-<span>News</span>
-<h3>Latest News</h3>
-</div>
-<div class="news_inner">
-<ul>
-<li class="wow fadeInUp" data-wow-duration="0.8s">
-<div class="inner">
-<div class="image">
-<img src="img/news/300x200.jpg" alt="" />
-<div class="main" data-img-url="img/news/3.jpg"></div>
-<a class="link" href="news-single.html"></a>
-</div>
-<div class="details">
-<div class="dates">
-<p><span class="first">By <a href="#">Alan Walker</a></span><span class="second">03 July 2020</span></p>
-</div>
-<div class="title">
-<h3><a href="news-single.html">The Role of Design in Development</a></h3>
-</div>
-</div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-<div class="inner">
-<div class="image">
-<img src="img/news/300x200.jpg" alt="" />
-<div class="main" data-img-url="img/news/2.jpg"></div>
-<a class="link" href="news-single.html"></a>
-</div>
-<div class="details">
-<div class="dates">
-<p><span class="first">By <a href="#">Bob Tylor</a></span><span class="second">25 Aug 2020</span></p>
-</div>
-<div class="title">
-<h3><a href="news-single.html">The Power of Social Media in Life</a></h3>
-</div>
-</div>
-</div>
-</li>
-<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
-<div class="inner">
-<div class="image">
-<img src="img/news/300x200.jpg" alt="" />
-<div class="main" data-img-url="img/news/1.jpg"></div>
-<a class="link" href="news-single.html"></a>
-</div>
-<div class="details">
-<div class="dates">
-<p><span class="first">By <a href="#">Kerge Brixton</a></span><span class="second">15 Sep 2019</span></p>
-</div>
-<div class="title">
-<h3><a href="news-single.html">What is Web and App Development?</a></h3>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div> -->
-
-
-                    <div class="arlo_tm_section" id="contact">
-                        <div class="arlo_tm_contact">
-                            <div class="container">
-                                <div class="contact_inner">
-                                    <div class="arlo_title_holder">
-                                        <span>Contact</span>
-                                        <h3>Get in Touch</h3>
-                                    </div>
-                                    <div class="desc">
-                                        <p class="wow txt" data-splitting>Please fill out the form on this section to contact with me. Or call between 7:00 a.m. and 9:00 p.m. ET, any day of the week.</p>
-                                    </div>
-                                    <div class="wrapper">
-                                        <div class="left">
-                                            <div class="fields">
-                                                <form action="/" method="post" class="contact_form" id="contact_form">
-                                                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-                                                    <div class="empty_notice"><span>Please Fill Required Fields</span></div>
-                                                    <div class="first">
-                                                        <ul>
-                                                            <li>
-                                                                <input id="name" type="text" placeholder="Name" autocomplete="off">
-                                                            </li>
-                                                            <li>
-                                                                <input id="email" type="text" placeholder="Email" autocomplete="off">
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="last">
-                                                        <textarea id="message" placeholder="Message"></textarea>
-                                                    </div>
-                                                    <div class="arlo_tm_button" data-color="dark">
-                                                        <a id="send_message" href="#">Send Message</a>
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="mapouter">
-                                                <div class="gmap_canvas">
-                                                    <iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=kose%20heights&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                                    <a href="https://www.whatismyip-address.com/divi-discount/"></a>
-                                                </div>
-                                                <style>
-                                                    .mapouter {
-                                                        position: relative;
-                                                        text-align: right;
-                                                        height: 100%;
-                                                        width: 100%;
-                                                    }
-                                                    
-                                                    .gmap_canvas {
-                                                        overflow: hidden;
-                                                        background: none!important;
-                                                        height: 100%;
-                                                        width: 100%;
-                                                    }
-                                                </style>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="arlo_tm_copyright">
-                        <div class="container">
-                            <div class="copyright_inner">
-                                <div class="copy">
-                                    <p>Copyright &copy; 2019 - 2020. Template has been designed by <a href="https://github.com/Denzel97" target="_blank">Denzel</a></p>
-                                </div>
-                                <div class="top">
-                                    <a class="arlo_tm_totop" href="#"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="mouse-cursor cursor-outer"></div>
-            <div class="mouse-cursor cursor-inner"></div>
-
-        </div>
+  <section class="intro section shell" aria-labelledby="introTitle">
+    <div class="section-index reveal"><span>01 / THE MINDSET</span><span class="thin-rule"></span><span>A LITTLE ABOUT HOW I THINK</span></div>
+    <div class="intro-grid">
+      <div class="intro-heading reveal"><span class="asterisk">✳</span><h2 id="introTitle">I don't just write code.<br><em>I build what comes next.</em></h2></div>
+      <div class="intro-body reveal"><p>Great technology should make life less complicated, not more. I work where <strong>software, people and operations</strong> meet—transforming everyday friction into systems that feel effortless.</p><p>From a school morning to a SACCO member's finances, from an insurance workflow to a founder's first big idea, I care about the details that make technology genuinely useful.</p><a class="under-link" href="#about">More about my journey <span>↗</span></a></div>
     </div>
+    <div class="stats-row reveal"><div class="stat"><strong>06<span>+</span></strong><span>YEARS BUILDING<br>REAL-WORLD SOFTWARE</span></div><div class="stat"><strong>360<span>°</span></strong><span>FROM PRODUCT IDEA<br>TO LIVE PLATFORM</span></div><div class="stat"><strong>01</strong><span>MISSION: MAKE<br>TECHNOLOGY MATTER</span></div></div>
+  </section>
 
+  <section class="workspace-feature" aria-labelledby="workspaceTitle"><img class="workspace-feature-image" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/e75bd5de-affd-4fba-ab54-81bb1d8f73a3.png" alt="Warm designer's home workstation with an ultrawide curved monitor, wooden desk, ergonomic chair and plants" loading="lazy" decoding="async"><div class="workspace-feature-shade"></div><div class="shell workspace-feature-inner"><div class="workspace-meta"><span>✳ &nbsp; BEHIND THE BUILD</span><span>CREATIVE WORKSPACE / 2026</span></div><div class="workspace-message"><span class="workspace-kicker">WHERE FOCUS MEETS CURIOSITY</span><h2 id="workspaceTitle">Space to think.<br><em>Room to create.</em></h2><p>A place for deep work, hard problems and ideas worth bringing to life.</p><a class="workspace-button" href="#work">Explore the work <span>↗</span></a></div><div class="workspace-foot"><span>DESIGNED FOR DEEP WORK.</span><span>AN IDEA BECOMES A SYSTEM.</span></div></div><span class="workspace-caption">WORKSPACE VISUALIZATION</span></section>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-    <script src="js/plugins.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap">
-    </script>
-    <script src="js/init.js"></script>
+  <section class="work section" id="work" aria-labelledby="workTitle">
+    <div class="shell"><div class="section-index reveal"><span>02 / SELECTED WORK</span><span class="thin-rule"></span><span>IDEAS, SYSTEMS &amp; IMPACT</span></div>
+      <div class="section-heading-row reveal"><h2 class="display-heading" id="workTitle">Proof is in<br><em>the building.</em></h2><p>Not just pixels on screens. Products, platforms, and solutions solving problems for real people and organizations.</p></div>
+      <div class="case-discovery-hint reveal">SELECT A PROJECT TO EXPLORE ITS FULL CASE STUDY <span>↗</span></div><div class="filters reveal" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>07</span></button><button class="filter" data-filter="product" aria-pressed="false">Products <span>03</span></button><button class="filter" data-filter="client" aria-pressed="false">Client systems <span>04</span></button></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-featured reveal" data-category="product">
+          <div class="project-visual school-art tilt" data-tilt="2" aria-label="Illustrative SchoolSphere 360 school dashboard">
+            <div class="project-art-grid"></div><div class="school-floating-tag">A BETTER SCHOOL DAY <span>✳</span></div>
+            <div class="dashboard school-dashboard"><div class="dashboard-top"><span class="mock-logomark">◈</span><strong>SchoolSphere<span> 360</span></strong><span class="mock-top-right">MONDAY · SCHOOL OVERVIEW</span></div><div class="school-main"><div class="dash-kicker">GOOD MORNING, ADMINISTRATOR</div><div class="dash-title">Your school at a glance<span>↗</span></div><div class="school-metrics"><div><small>Attendance rate</small><b>On track</b><span class="metric-pill">↗ Today</span></div><div><small>Students present</small><b>Updated</b><span class="mini-muted">Across all grades</span></div><div><small>Active routes</small><b>Active</b><span class="mini-muted">Transport monitoring</span></div></div><div class="school-lower"><div class="attendance-panel"><span>Weekly attendance</span><div class="attendance-bars"><i style="height:47%"></i><i style="height:69%"></i><i style="height:58%"></i><i style="height:88%"></i><i style="height:76%"></i><i style="height:92%"></i><i style="height:74%"></i></div></div><div class="route-panel"><span>Transport / Live</span><strong>Route 04 <i>● Active</i></strong><div class="route-track"><span></span><span></span><span></span></div><small>Student pickup → School</small></div></div></div></div>
+            <div class="visual-number">01 / 07</div>
+          </div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">FLAGSHIP PRODUCT · IN DEVELOPMENT</span><h3>SchoolSphere <span>360</span></h3><p>One connected ecosystem for the entire school day—from classrooms and finance to transport, parents and communication.</p></div><div class="project-info-aside"><span>SAAS / EDTECH / OPERATIONS</span><button class="round-open case-open" data-case="schoolsphere" aria-label="Explore SchoolSphere 360 case study">↗</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="product">
+  <div class="project-visual padpoa-screen-art tilt" data-tilt="2" aria-label="Original screenshots of the PadPoa PS5 rental app, including its homepage and game catalogue">
+    <div class="padpoa-screen-mesh" aria-hidden="true"></div>
+    <span class="padpoa-screen-kicker"><img src="https://padpoa.vercel.app/favicon.svg" width="21" height="21" alt="" loading="lazy"> PADPOA <b>·</b> THE REAL APP</span>
+    <a class="padpoa-main-shot padpoa-shot" href="https://padpoa.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the live PadPoa PS5 rentals homepage">
+      <span class="padpoa-browser-chrome"><span class="padpoa-browser-dots" aria-hidden="true">● ● ●</span><span>padpoa.vercel.app</span><span>↗</span></span>
+      <img src="/api/padpoa-shot?view=home" data-fallback-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fpadpoa.vercel.app%2F?w=1400&amp;h=920" alt="Screenshot of the actual PadPoa homepage showing the dark PlayStation 5 rental experience and lime-green booking accents" loading="lazy" width="1400" height="920">
+    </a>
+    <a class="padpoa-second-shot padpoa-shot" href="https://padpoa.vercel.app/games" target="_blank" rel="noopener noreferrer" aria-label="Open PadPoa's real games catalogue">
+      <img src="/api/padpoa-shot?view=games" data-fallback-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fpadpoa.vercel.app%2Fgames?w=920&amp;h=800" alt="Screenshot of the original PadPoa games page and its catalogue of available titles" loading="lazy" width="920" height="800">
+      <span>THE GAME LIBRARY <b>↗</b></span>
+    </a>
+    <span class="padpoa-capture-note">ORIGINAL WEBSITE / LIVE SCREEN CAPTURES</span>
+    <div class="visual-number">02 / 07</div>
+  </div>
+  <div class="project-info"><div class="project-info-main">
+    <span class="project-type">IN-HOUSE PRODUCT · LIVE INTERACTIVE PROTOTYPE</span><h3>PadPoa <span>↗</span></h3>
+    <p>A PS5 rental experience built for Kiambu Road: discover consoles and games, configure a five-hour-minimum session and explore a streamlined booking journey.</p>
+  </div><div class="project-info-aside"><span>GAMING / RENTAL TECH</span><a class="raykays-visit" href="https://padpoa.vercel.app/" target="_blank" rel="noopener noreferrer">VIEW LIVE APP ↗</a><button class="round-open case-open" data-case="padpoa" aria-label="Explore PadPoa case study">↗</button></div></div>
+</article>
+<article class="project-card reveal" data-category="client">
+          <div class="project-visual rees-art tilt" data-tilt="3" aria-label="Illustrative SACCO member portal overview"><div class="grid-dots"></div><div class="rees-dashboard"><div class="rees-head"><div class="rees-symbol">R<span>.</span></div><span>MEMBER PORTAL</span><span class="live-dot">● LIVE</span></div><div class="rees-welcome">Good afternoon, member.</div><div class="rees-copy">Your finances, made clearer.</div><div class="balance-card"><small>Total contributions</small><strong>Member contributions</strong><div class="balance-tags"><span>↗ Savings</span><span>Shares</span><span>BBF</span></div></div><div class="rees-activity"><div><span>Transaction history</span><small>VIEW ALL ↗</small></div><p><i></i> Savings contribution <b>Recorded</b></p><p><i></i> Share contribution <b>Recorded</b></p></div></div><div class="visual-number">03 / 07</div></div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">CLIENT PLATFORM · LIVE / RETAINED</span><h3>REES SACCO</h3><p>Giving members a clearer, more accountable way to manage their savings, shares, loans and contributions.</p></div><div class="project-info-aside"><span>FINTECH / DJANGO</span><button class="round-open case-open" data-case="rees" aria-label="Explore REES SACCO case study">↗</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="product">
+          <div class="project-visual sifa-art tilt" data-tilt="3" aria-label="Illustrative online reputation dashboard"><div class="sifa-sun"></div><div class="sifa-head">SIFA <span>✳</span></div><div class="sifa-quote">Make every<br><em>good word</em><br>count.</div><div class="review-bubble"><div class="review-stars">★★★★★ <span>Positive feedback</span></div><p>“An experience worth sharing.”</p><span>PUBLIC REVIEWS / REAL TRUST</span></div><div class="visual-number">04 / 07</div></div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">IN-HOUSE PRODUCT · LIVE / EVOLVING</span><h3>Sifa <span>↗</span></h3><p>A reputation and customer-review platform helping businesses turn feedback into growth.</p></div><div class="project-info-aside"><span>SAAS / CUSTOMER EXPERIENCE</span><button class="round-open case-open" data-case="sifa" aria-label="Explore Sifa case study">↗</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="client">
+          <div class="project-visual estate-art tilt" data-tilt="3" aria-label="Architectural visual representing EstateFlow property platform"><div class="estate-top"><span>ESTATE<br>FLOW.</span><span>REIMAGINING SPACES</span></div><div class="architecture"><div class="building building-a"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="building building-b"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="building building-c"><i></i><i></i><i></i><i></i></div></div><span class="estate-sub">PROPERTY. PEOPLE. CONNECTED.</span><div class="visual-number">05 / 07</div></div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">CLIENT SYSTEM · DELIVERED</span><h3>EstateFlow</h3><p>A property and estate management solution bringing residents, managers and operations into one place.</p></div><div class="project-info-aside"><span>PROPTECH / OPERATIONS</span><button class="round-open case-open" data-case="estate" aria-label="Explore EstateFlow case study">↗</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="client">
+          <div class="project-visual bridge-art tilt" data-tilt="3" aria-label="Illustrative wealth management financial interface"><div class="bridge-circle"></div><div class="bridge-mock"><span class="bridge-brand">BRIDGE<span>—</span>WEALTH</span><div class="bridge-hero-mini">A future<br>worth <em>planning.</em></div><div class="bridge-chart"><svg viewBox="0 0 290 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C32 89 43 74 70 75S110 49 145 60 185 30 212 40 255 12 290 10" fill="none" stroke="#c6ddba" stroke-width="3"/><path d="M0 90C32 89 43 74 70 75S110 49 145 60 185 30 212 40 255 12 290 10V100H0Z" fill="url(#lineGrad)"/><defs><linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c6ddba" stop-opacity=".37"/><stop offset="1" stop-color="#c6ddba" stop-opacity="0"/></linearGradient></defs></svg></div><span class="bridge-footer">INSURANCE / PENSIONS / FINANCIAL WELLNESS</span></div><div class="visual-number">06 / 07</div></div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">CLIENT PLATFORM · ONGOING WORK</span><h3>Bridge-Wealth</h3><p>Digital experiences and operational tools making financial and insurance services easier to navigate.</p></div><div class="project-info-aside"><span>INSURTECH / FINANCE</span><button class="round-open case-open" data-case="bridge" aria-label="Explore Bridge-Wealth case study">↗</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="client">
+  <div class="project-visual raykays-screen-art tilt" data-tilt="2" aria-label="Actual screenshots of the live Raykays Tourism website">
+            <div class="raykays-screen-grid" aria-hidden="true"></div>
+            <span class="raykays-screen-kicker">RAYKAYS TOURISM <span>·</span> ACTUAL WEBSITE</span>
+            <a class="raykays-main-shot" href="https://raykaystours.com/" target="_blank" rel="noopener noreferrer" aria-label="View the live Raykays Tourism homepage">
+              <span class="raykays-browser-chrome"><span class="raykays-browser-dots" aria-hidden="true">● ● ●</span><span>raykaystours.com</span><span>↗</span></span>
+              <img src="https://denzel-ouma-opondo-i290v5u2j-denzel97s-projects.vercel.app/assets/raykays-home.jpg" alt="Actual Raykays Tourism homepage with Dubai skyline, gold navigation, and the headline Unforgettable Journeys, Extraordinary Places" loading="lazy" width="1000" height="740">
+            </a>
+            <a class="raykays-second-shot" href="https://raykaystours.com/tour/details/3/" target="_blank" rel="noopener noreferrer" aria-label="View Raykays Sunrise Safari Dubai tour page">
+              <img src="https://denzel-ouma-opondo-i290v5u2j-denzel97s-projects.vercel.app/assets/raykays-safari.jpg" alt="Actual Raykays Tourism Sunrise Safari Dubai tour detail interface" loading="lazy" width="1000" height="740">
+              <span>SUNRISE SAFARI <b>↗</b></span>
+            </a>
+            <span class="raykays-capture-note">LIVE WEBSITE / ORIGINAL CAPTURES</span>
+            <div class="visual-number">07 / 07</div>
+          </div>
+          <div class="project-info"><div class="project-info-main"><span class="project-type">LIVE CLIENT WEBSITE · REAL SCREENSHOTS</span><h3>Raykays Tourism</h3><p>The real Raykays travel experience: immersive destination discovery, curated tours, detailed experiences and booking journeys.</p></div><div class="project-info-aside"><span>TRAVEL TECH / DJANGO</span><a class="raykays-visit" href="https://raykaystours.com/" target="_blank" rel="noopener noreferrer">VIEW WEBSITE ↗</a><button class="round-open case-open" data-case="raykays" aria-label="Explore Raykays Tourism case study">↗</button></div></div>
+</article>
+      </div>
+      <p class="work-footnote reveal">Also in the workshop: <strong>R.A.F.I.K.I AI</strong>, <strong>ResQLink Africa</strong> and more ideas I'm shaping for the future. <a href="#contact">Ask me what's next ↗</a></p>
+    </div>
+  </section>
 
+  <section class="interlude section" id="about" aria-labelledby="aboutTitle"><div class="interlude-deco">03</div><div class="shell interlude-layout"><div class="interlude-photo reveal"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/9aa4efb1-be31-480c-af3a-1904333a0428.jpg" alt="Denzel at an earlier professional event, wearing a suit" loading="lazy"><span>THE JOURNEY IS STILL BEING WRITTEN</span></div><div class="interlude-content"><div class="section-index reveal"><span>03 / THE HUMAN STORY</span><span class="thin-rule"></span></div><h2 class="display-heading reveal" id="aboutTitle">A builder by<br><em>instinct.</em><br>A founder<br>by <em>choice.</em></h2><div class="interlude-paras reveal"><p>My journey started with a curiosity about how things work—and a stronger curiosity about how they could work better.</p><p>From IT support and infrastructure to software engineering, product architecture and building a company, every chapter taught me the same lesson: <strong>the best solutions start by listening.</strong></p><p>Today, I lead FikraWorks Technologies while still staying close to the code, the customers, and the problems worth solving.</p></div><a class="under-link light" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/12b78b3f-7a63-4de7-b5b5-88aa19c3c241.pdf" target="_blank" rel="noopener noreferrer">Read my résumé <span>↗</span></a></div></div></section>
+
+  <section class="journey section shell" aria-labelledby="journeyTitle">
+    <div class="section-index reveal"><span>04 / THE JOURNEY</span><span class="thin-rule"></span><span>FROM ROOTS TO WHAT'S NEXT</span></div>
+    <div class="journey-layout"><div class="journey-aside reveal"><h2 class="display-heading" id="journeyTitle">Every step<br><em>built this.</em></h2><p>Different roles. Different challenges. One consistent drive to get better at the craft.</p><div class="journey-aside-mark">D<span>—</span>O</div></div><div class="timeline">
+      <div class="timeline-item reveal"><div class="timeline-date">NOW <span>↗</span></div><div><h3>Founder & Lead Developer</h3><strong>FikraWorks Technologies</strong><p>Building software products, delivering client systems, and creating a company centered on practical innovation.</p></div></div>
+      <div class="timeline-item reveal"><div class="timeline-date">2021 — NOW</div><div><h3>Software &amp; Digital Operations</h3><strong>Bridge-Wealth Insurance Agency</strong><p>Developing digital tools and supporting the intersection of insurance services, technology, and operations.</p></div></div>
+      <div class="timeline-item reveal"><div class="timeline-date">2023</div><div><h3>Full-Stack Developer Intern</h3><strong>Jamii Telecommunications (JTL)</strong><p>Worked on the corporate website and an operational system for field teams and shop tracking.</p></div></div>
+      <div class="timeline-item reveal"><div class="timeline-date">2020</div><div><h3>Engineering &amp; IT Foundations</h3><strong>Jubilee General Insurance</strong><p>Worked across motor assessment software, infrastructure, user support and troubleshooting.</p></div></div>
+      <div class="timeline-item reveal"><div class="timeline-date">EARLY DAYS</div><div><h3>The roots of my craft</h3><strong>IT services, technical facilitation & learning</strong><p>From hands-on IT work to sharing coding skills in Kibera—building a foundation in empathy and problem-solving.</p></div></div>
+    </div></div>
+  </section>
+
+  <section class="expertise section" id="expertise" aria-labelledby="expertiseTitle"><div class="shell"><div class="section-index reveal"><span>05 / CAPABILITIES</span><span class="thin-rule"></span><span>CRAFT MEETS CURIOSITY</span></div><div class="expertise-head reveal"><h2 class="display-heading" id="expertiseTitle">The right tools.<br><em>The bigger picture.</em></h2><p>I move between product thinking, architecture, design decisions, engineering and the realities of running software in production.</p></div><div class="expertise-layout">
+      <div class="expertise-panel ribbon-panel reveal"><div class="orb-top"><span>MY OPERATING SYSTEM</span><span>INTERACTIVE / 3D</span></div><div class="orb-stage" id="orbStage"><div class="orb-image-fallback" aria-hidden="true"></div><canvas id="orbCanvas" aria-label="Interactive bronze infinity ribbon, drag or use the arrow keys to explore"></canvas><div class="orb-grain" aria-hidden="true"></div><div class="orb-vignette" aria-hidden="true"></div></div><div class="orb-bottom"><span>BUILD WITH INTENTION.</span><span>DRAG TO EXPLORE ↗</span></div></div>
+      <div class="expertise-list">
+        <div class="skill-group reveal"><div class="skill-num">01</div><div><h3>Engineering & architecture</h3><p>Python · Django · React · JavaScript · REST APIs · PHP · Laravel · Flask · Node.js</p></div><span class="skill-asterisk">✳</span></div>
+        <div class="skill-group reveal"><div class="skill-num">02</div><div><h3>Product & experience</h3><p>Product strategy · SaaS systems · User journeys · Interfaces · Prototyping · Data workflows</p></div><span class="skill-asterisk">✳</span></div>
+        <div class="skill-group reveal"><div class="skill-num">03</div><div><h3>Infrastructure & delivery</h3><p>Linux · Hosting · Nginx · Deployment · DNS · System security · Troubleshooting</p></div><span class="skill-asterisk">✳</span></div>
+        <div class="skill-group reveal"><div class="skill-num">04</div><div><h3>Business & leadership</h3><p>Client discovery · Technical communication · Product roadmaps · Service operations · Entrepreneurship</p></div><span class="skill-asterisk">✳</span></div>
+        <div class="skill-footer reveal"><span>ALWAYS LEARNING. ALWAYS BUILDING.</span><span>∞</span></div>
+      </div>
+    </div></div></section>
+
+  <section class="founder section" aria-labelledby="founderTitle"><div class="shell founder-grid">
+    <div class="founder-left reveal"><span class="founder-top-label">THE BIGGER MISSION / 06</span><h2 class="display-heading" id="founderTitle">One vision.<br><em>Many ways</em><br>to make it real.</h2><p>FikraWorks Technologies is the space where my work as an engineer meets my ambition as a founder. We build platforms, simplify processes and help businesses turn ideas into working solutions.</p><a class="solid-btn founder-btn magnetic" href="https://fikraworkstech.com" target="_blank" rel="noopener noreferrer">Discover FikraWorks <span>↗</span></a><span class="founder-small">ONE PARTNER — HOSTING. SYSTEMS. AUTOMATIONS.</span></div>
+    <div class="founder-right reveal"><div class="founder-card"><div class="founder-card-text">FOUNDER'S NOTE <span>✳</span></div><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/427c212a-9192-4354-a846-03043c0ca025.jpg" alt="FikraWorks Technologies white brand mark on black" loading="lazy"><p>Redefining efficiency.<br><em>One meaningful system at a time.</em></p></div><div class="founder-circle">FW<span>®</span></div></div>
+  </div></section>
+
+  <section class="fcx-showcase" aria-labelledby="connectFeatureTitle">
+  <div class="fcx-starfield" aria-hidden="true"></div>
+  <div class="shell fcx-layout">
+    <div class="fcx-intro reveal">
+      <div class="fcx-eyebrow"><span class="fcx-asterisk" aria-hidden="true">✳</span><span>FIKRA CONNECT</span><span class="fcx-eyebrow-rule"></span><span class="fcx-edition">A FIKRAWORKS PRODUCT</span></div>
+      <h2 id="connectFeatureTitle">Great work begins<br>with a <em>conversation.</em></h2>
+      <div class="fcx-intro-copy"><span class="fcx-status-light" aria-hidden="true"></span><strong>Introducing Fikra Connect</strong></div>
+      <p class="fcx-description">An original, subscription-free contact launcher that connects your visitors directly to you. Three trusted channels. One beautifully simple experience.</p>
+      <div class="fcx-trust-chips" aria-label="Fikra Connect advantages">
+        <span><i aria-hidden="true">◈</i> Direct contact</span>
+        <span><i aria-hidden="true">⌁</i> Zero widget subscription</span>
+        <span><i aria-hidden="true">◇</i> Privacy-first</span>
+      </div>
+      <button class="fcx-main-cta" type="button" id="fikraConnectDemo">Experience Fikra Connect <span class="fcx-main-cta-arrow" aria-hidden="true">↗</span></button>
+      <p class="fcx-cta-micro">AN INDEPENDENT TOOL BY FIKRAWORKS TECHNOLOGIES</p>
+    </div>
+    <div class="fcx-stage reveal" aria-label="Interactive Fikra Connect contact channels">
+      <div class="fcx-stage-glow" aria-hidden="true"></div>
+      <div class="fcx-stage-grid" aria-hidden="true"></div>
+      <div class="fcx-stage-label"><span>CONTACT EXPERIENCE</span><span>01 / 03</span></div>
+      <div class="fcx-orbit fcx-orbit-large" aria-hidden="true"></div>
+      <div class="fcx-orbit fcx-orbit-mid" aria-hidden="true"></div>
+      <div class="fcx-orbit fcx-orbit-small" aria-hidden="true"></div>
+      <div class="fcx-orbit-node fcx-node-one" aria-hidden="true"></div>
+      <div class="fcx-orbit-node fcx-node-two" aria-hidden="true"></div>
+      <div class="fcx-orbit-node fcx-node-three" aria-hidden="true"></div>
+      <a class="fcx-contact-chip fcx-chip-mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=opondodenzel%40gmail.com&su=Portfolio%20project%20enquiry" target="_blank" rel="noopener noreferrer" aria-label="Contact me through Gmail">
+        <span class="fcx-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="fcx-chip-info"><strong>Gmail</strong><small>Send an enquiry</small></span><span class="fcx-chip-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="fcx-contact-chip fcx-chip-whatsapp" href="https://wa.me/254100994560?text=Hello%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Contact me through WhatsApp">
+        <span class="fcx-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5A8 8 0 0 1 8.5 18.7L4 20l1.3-4.4A8 8 0 1 1 20 11.5Z"/><path d="M9 9c.6 2.7 2 4.3 5.1 5l1-1"/></svg></span><span class="fcx-chip-info"><strong>WhatsApp</strong><small>Start a conversation</small></span><span class="fcx-chip-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="fcx-contact-chip fcx-chip-linkedin" href="https://www.linkedin.com/in/denzel-ouma-261775178" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn">
+        <span class="fcx-chip-icon fcx-linkedin-glyph">in</span><span class="fcx-chip-info"><strong>LinkedIn</strong><small>Connect professionally</small></span><span class="fcx-chip-arrow" aria-hidden="true">↗</span>
+      </a>
+      <button class="fcx-core" type="button" data-fikra-open aria-label="Open Fikra Connect contact widget">
+        <span class="fcx-core-inner"><span class="fcx-core-star" aria-hidden="true">✳</span><strong>FIKRA<br>CONNECT</strong></span>
+        <span class="fcx-core-halo" aria-hidden="true"></span>
+      </button>
+      <div class="fcx-stage-foot"><span>FIND YOUR CHANNEL</span><span>HUMAN TO HUMAN</span></div>
+    </div>
+  </div>
+  <div class="shell fcx-feature-footer">
+    <div><span class="fcx-feature-icon" aria-hidden="true">↗</span><span>DIRECT CHANNELS</span></div>
+    <div><span class="fcx-feature-icon" aria-hidden="true">⧉</span><span>NO WIDGET SUBSCRIPTION</span></div>
+    <div><span class="fcx-feature-icon" aria-hidden="true">✳</span><span>MADE FOR REAL CONVERSATIONS</span></div>
+  </div>
+</section>
+<section class="portrait-break" aria-label="Personal philosophy"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/bed423f4-c802-4a42-955f-0314ef738f6e.png" alt="Creative portrait illustration of Denzel beside a white car at sunset" loading="lazy"><div class="portrait-break-overlay"></div><div class="shell portrait-break-content reveal"><span>THE NEXT CHAPTER</span><blockquote>“Technology is powerful.<br><em>What we do with it</em> matters more.”</blockquote><span>DENZEL O. OPONDO — ALWAYS BUILDING</span></div><span class="portrait-photo-note">CREATIVE PORTRAIT / VISUAL STUDY</span></section>
+
+  <section class="contact section" id="contact" aria-labelledby="contactTitle"><div class="shell"><div class="section-index reveal"><span>07 / SAY HELLO</span><span class="thin-rule"></span><span>THE NEXT GOOD IDEA COULD START HERE</span></div><div class="contact-top reveal"><span class="contact-availability"><i></i> AVAILABLE FOR THE RIGHT CONVERSATION</span><h2 class="contact-heading" id="contactTitle">Have something<br><em>worth building?</em></h2><div class="contact-actions"><a class="contact-link magnetic" href="mailto:opondodenzel@gmail.com?subject=Let's%20build%20something%20together">Let's make it happen <span>↗</span></a></div></div><div class="contact-bottom"><div><span class="contact-small-label">DROP A LINE</span><a class="email-link" href="mailto:opondodenzel@gmail.com">opondodenzel@gmail.com</a><a class="email-link" href="tel:+254100994560" aria-label="Call FikraWorks at plus 254 100 994 560" style="font-size:clamp(16px,1.8vw,25px);margin-top:16px">+254 100 994 560</a><button class="copy-btn" id="copyEmail" aria-label="Copy email address">COPY EMAIL <span>↗</span></button><span class="copy-status" id="copyStatus" role="status" aria-live="polite"></span></div><div><span class="contact-small-label">FIND ME ELSEWHERE</span><div class="socials"><a href="https://www.linkedin.com/in/denzel-ouma-261775178" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://wa.me/254100994560" target="_blank" rel="noopener noreferrer">WHATSAPP ↗</a><a href="https://github.com/Denzel97" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://fikraworkstech.com" target="_blank" rel="noopener noreferrer">FIKRAWORKS ↗</a><a href="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/12b78b3f-7a63-4de7-b5b5-88aa19c3c241.pdf" target="_blank" rel="noopener noreferrer">RÉSUMÉ ↗</a></div></div></div>
+    <footer class="footer"><span>© <span id="year">2026</span> DENZEL OUMA OPONDO</span><span>CRAFTED WITH INTENTION IN NAIROBI, KENYA <span>✳</span></span><a href="#home">BACK TO TOP ↑</a></footer></div></section>
+</main>
+<dialog id="caseDialog" class="case-dialog case-dialog-premium" aria-labelledby="caseTitle"><div class="case-shell">
+  <div class="case-header"><div class="case-brand"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/427c212a-9192-4354-a846-03043c0ca025.jpg" alt="FikraWorks Technologies logo" loading="lazy"><span>FIKRAWORKS<br><small>PROJECT JOURNAL</small></span></div><span class="case-header-center">THE WORK, UNDER THE HOOD <span> / 2026 EDITION</span></span><button type="button" id="closeCase" class="case-close-new" aria-label="Close project case study">CLOSE <span>✕</span></button></div>
+  <div class="case-scroll" id="caseScroll">
+    <div class="case-intro"><div class="case-topline"><span id="caseCategory"></span><span id="caseIndex">SELECTED WORK</span></div><h2 id="caseTitle"></h2><p id="caseLead" class="case-lead"></p><div id="caseHighlights" class="case-highlights"></div><div class="case-actions"><a id="caseLive" class="case-live-button" href="#" target="_blank" rel="noopener noreferrer" hidden>VISIT LIVE PROJECT <span>↗</span></a><a class="case-inquiry" href="mailto:opondodenzel@gmail.com?subject=Project%20case%20study%20enquiry">REQUEST PROJECT DETAILS ↗</a></div><p class="case-commercial-note">Want a private demonstration, detailed implementation plan or commercial proposal? <a href="mailto:opondodenzel@gmail.com?subject=FikraWorks%20Project%20Enquiry">Contact FikraWorks Technologies ↗</a></p></div>
+    <div class="case-tab-wrap"><div class="case-tabs" role="tablist" aria-label="Explore project case study">
+      <button class="case-tab active" type="button" id="caseTabOverview" data-case-tab="overview" role="tab" aria-controls="casePanelOverview" aria-selected="true">01 <span>Overview</span></button>
+      <button class="case-tab" type="button" id="caseTabTech" data-case-tab="tech" role="tab" aria-controls="casePanelTech" aria-selected="false">02 <span>Engineering</span></button>
+      <button class="case-tab" type="button" id="caseTabJourney" data-case-tab="journey" role="tab" aria-controls="casePanelJourney" aria-selected="false">03 <span>Journey</span></button>
+      <button class="case-tab" type="button" id="caseTabOps" data-case-tab="ops" role="tab" aria-controls="casePanelOps" aria-selected="false">04 <span>After launch</span></button>
+    </div></div>
+    <div class="case-panels">
+      <section class="case-panel" id="casePanelOverview" role="tabpanel" aria-labelledby="caseTabOverview"><div class="case-section-heading"><span>01 / PROJECT OVERVIEW</span><h3>Beyond the <em>interface.</em></h3></div><div id="caseScreenshotLayout" class="case-screenshot-layout"></div><section class="case-overview-summary" aria-label="Project overview summary"><span>THE PROJECT IN CONTEXT</span><h4 id="caseSummaryHeading"></h4><p id="caseSummaryText"></p><div id="caseOverviewFacts" class="case-overview-facts"></div></section><div class="case-explain-grid"><article><span>THE CHALLENGE</span><h4>The problem worth solving.</h4><p id="caseChallenge"></p></article><article><span>THE BUSINESS CASE</span><h4>Why does it matter?</h4><p id="caseBusiness"></p></article></div><div class="case-outcome-block"><span>PROJECT OUTCOME & STATUS</span><p id="caseOutcome"></p></div></section>
+      <section class="case-panel" id="casePanelTech" role="tabpanel" aria-labelledby="caseTabTech" hidden><div class="case-section-heading"><span>02 / TECHNICAL BREAKDOWN</span><h3>Built with <em>purpose.</em></h3></div><div class="case-architecture"><div><span>TECHNOLOGIES & TOOLS</span><div id="caseTags" class="case-tag-cloud"></div></div><div><span>SYSTEM ARCHITECTURE</span><p id="caseArchitecture"></p></div></div><h4 class="case-subhead">Core platform capabilities</h4><div id="caseCapabilities" class="case-capabilities"></div><div class="case-tech-note"><span>IMPLEMENTATION NOTES</span><p id="caseEngineeringNote"></p></div></section>
+      <section class="case-panel" id="casePanelJourney" role="tabpanel" aria-labelledby="caseTabJourney" hidden><div class="case-section-heading"><span>03 / DEVELOPMENT JOURNEY</span><h3>From first sketch<br>to <em>something real.</em></h3></div><div class="case-duration"><span>PROJECT TIMING</span><strong id="caseTime"></strong><p id="caseTimeNote"></p></div><div id="caseJourney" class="case-journey"></div></section>
+      <section class="case-panel" id="casePanelOps" role="tabpanel" aria-labelledby="caseTabOps" hidden><div class="case-section-heading"><span>04 / DELIVERY & CONTINUITY</span><h3>Beyond the <em>launch.</em></h3></div><div class="case-service-banner"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JuLQWzWrvbvHdsvuRZ2HNBmLJP/427c212a-9192-4354-a846-03043c0ca025.jpg" alt="FikraWorks Technologies logo" loading="lazy"><div><span>HOSTING • SYSTEMS • AUTOMATIONS</span><h4>Engineering is the beginning.<br><em>Continuity is the commitment.</em></h4></div></div><div id="caseOperations" class="case-operations"></div><div id="caseServiceNote" class="case-service-disclaimer"></div></section>
+    </div>
+    <div class="case-bottom"><span>DENZEL OUMA OPONDO / FIKRAWORKS TECHNOLOGIES</span><button type="button" id="caseBackTop">BACK TO TOP ↑</button></div>
+  </div>
+</div></dialog>
 </body>
-
 </html>
